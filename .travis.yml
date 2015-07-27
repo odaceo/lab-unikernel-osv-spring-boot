@@ -6,3 +6,8 @@ cache:
 
 jdk:
   - openjdk7
+
+after_success:
+  - curl https://raw.githubusercontent.com/cloudius-systems/capstan/master/scripts/download | bash
+  - export PATH=$HOME/bin:$PATH
+  - capstan build
