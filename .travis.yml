@@ -10,6 +10,7 @@ jdk:
 addons:
   apt:
     packages:
+      - qemu-kvm
       - qemu-utils
 
 install:
