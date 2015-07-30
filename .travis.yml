@@ -6,15 +6,3 @@ cache:
 
 jdk:
   - openjdk7
-
-addons:
-  apt:
-    packages:
-      - qemu-utils
-
-install:
-  - curl https://raw.githubusercontent.com/cloudius-systems/capstan/master/scripts/download | bash
-  - export PATH=$HOME/bin:$PATH
-
-script:
-  - capstan build
