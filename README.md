@@ -30,7 +30,7 @@ $ capstan build -v
 You can launch the application under VirtualBox with:
 
 ```
-$ capstan run -p vbox -n bridge -b en1 -v
+$ capstan run -p vbox -f "8080:8080" -f "9090:9090" -v
 ```
 
 Check out the service:
