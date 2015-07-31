@@ -19,4 +19,4 @@ install:
   - export PATH=$HOME/bin:$PATH
 
 script:
-  - capstan build
+  - capstan build -v
