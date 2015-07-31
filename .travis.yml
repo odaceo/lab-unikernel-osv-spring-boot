@@ -17,6 +17,7 @@ before_install:
 install:
   - curl https://raw.githubusercontent.com/cloudius-systems/capstan/master/scripts/download | bash
   - export PATH=$HOME/bin:$PATH
+  - export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64`
 
 script:
   - capstan build -v

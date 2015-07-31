@@ -13,7 +13,7 @@ installed on your computer.
 
 ```
 $ export PATH=$HOME/bin:$PATH 
-$ export CAPSTAN_QEMU_PATH=/usr/local/bin/qemu-system-x86_64 
+$ export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64` 
 ```
 
 ## Build
