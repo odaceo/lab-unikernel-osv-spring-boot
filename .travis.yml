@@ -1,3 +1,5 @@
+sudo: required
+
 language: java
 
 cache:
@@ -7,11 +9,10 @@ cache:
 jdk:
   - openjdk7
 
-addons:
-  apt:
-    packages:
-      - qemu-kvm
-      - qemu-utils
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install qemu-kvm
+  - sudo apt-get install qemu-utils
 
 install:
   - curl https://raw.githubusercontent.com/cloudius-systems/capstan/master/scripts/download | bash
