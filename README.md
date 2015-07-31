@@ -16,7 +16,7 @@ $ export PATH=$HOME/bin:$PATH
 $ export CAPSTAN_QEMU_PATH=/usr/local/bin/qemu-system-x86_64 
 ```
 
-## Usage
+## Build
 
 The ``build`` command create image.  If you make changes to the application, 
 you need rebuild the image with:
@@ -25,10 +25,24 @@ you need rebuild the image with:
 $ capstan build -v
 ```
 
+## Run
+
 You can launch the application under VirtualBox with:
 
 ```
 $ capstan run -p vbox -n bridge -b en1 -v
+```
+
+Check out the service:
+
+```
+$ curl http://localhost:8080/greeting
+```
+
+Check the health of the app:
+
+```
+$ curl http://localhost:9090/health
 ```
 
 ## Reporting Issues
