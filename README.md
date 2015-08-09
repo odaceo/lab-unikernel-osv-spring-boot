@@ -21,4 +21,4 @@ All code distributed under [ASL 2.0](LICENSE).
 
 ## Copyright
 
-2012, [odaceo](http://odaceo.ch)
+© 2015 [Odaceo](http://odaceo.ch). All rights reserved.
