@@ -1,6 +1,6 @@
 # osv-app-springboot
 
-[![Apache License 2](https://img.shields.io/badge/license-ASF2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+[![License](https://img.shields.io/github/license/odaceo/osv-app-springboot.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/odaceo/osv-app-springboot.svg?branch=develop)](https://travis-ci.org/odaceo/osv-app-springboot)
 
 ## Description
