@@ -60,7 +60,7 @@ Convert the disk image in RAW format:
 $ qemu-img convert -f qcow2 -O raw ~/.capstan/repository/osv-app-springboot/osv-app-springboot.qemu osv-app-springboot.raw
 ```
 
-Sign in to your [CloudSigma](https://zrh.cloudsigma.com/ui) account and create a new disk from the RAW image.
+Sign in to your [CloudSigma](http://tracking.cloudsigma.com/aff_c?offer_id=2&aff_id=2295&url_id=19&source=osv-app-springboot) account and create a new disk from the RAW image.
 
 Create a new machine with sufficient resources, 1GHz of CPU and 256 MB of RAM are more than enough.
 
