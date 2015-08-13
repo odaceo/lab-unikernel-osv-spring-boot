@@ -1,13 +1,13 @@
 # osv-app-springboot
 
 [![License](https://img.shields.io/github/license/odaceo/osv-app-springboot.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/odaceo/osv-app-springboot.svg?branch=develop)](https://travis-ci.org/odaceo/osv-app-springboot)
+[![Build Status](https://travis-ci.org/odaceo/osv-app-springboot.svg)](https://travis-ci.org/odaceo/osv-app-springboot)
 
 ## Description
 
 A Spring Boot application running on OSv.
 
-## Prerequisites
+## Requirements
 
 You need to have [Capstan](https://github.com/cloudius-systems/capstan)
 installed on your computer.
