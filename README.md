@@ -5,9 +5,9 @@
 
 ## Description
 
-A Spring Boot application running on OSv.
+A Spring Boot application configured to run on OSv.
 
-## Requirements
+## Prerequisites
 
 You need to have [Capstan](https://github.com/cloudius-systems/capstan)
 installed on your computer.
@@ -17,72 +17,72 @@ $ export PATH=$HOME/bin:$PATH
 $ export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64` 
 ```
 
-## Build
+## Building the application
 
-The ``build`` command create image.  If you make changes to the application, 
-you need rebuild the image with:
+The ``build`` command creates a Capstan virtual machine image.
+If you modify the application, you will need rebuild the image with the following command:
 
 ```
 $ capstan build -p 'vbox' -v
 ```
 
-## Run
+## Running the application
 
-You can launch the application under VirtualBox with:
+To launch the application under VirtualBox use the following command:
 
 ```
 $ capstan run -p 'vbox' -f '8080:8080' -f '9090:9090' -v
 ```
 
-Check out the service:
+To the service use the following command: 
 
 ```
 $ curl http://localhost:8080/greeting
 ```
 
-Check the health of the app:
+To check the health of the application, use the following command:
 
 ```
 $ curl http://localhost:9090/health
 ```
 
-## Deploy on CloudSgima
+## Deploying the application on CloudSgima
 
-First, build the disk image for KVM:
+First, build the disk image for KVM using the following command:
 
 ```
 $ capstan build -p 'qemu' -v
 ```
 
-Convert the disk image in RAW format: 
+To convert the disk image into a RAW format use the following command: 
 
 ```
 $ qemu-img convert -f qcow2 -O raw ~/.capstan/repository/osv-app-springboot/osv-app-springboot.qemu osv-app-springboot.raw
 ```
 
-Sign in to your [CloudSigma](http://tracking.cloudsigma.com/aff_c?offer_id=2&aff_id=2295&url_id=19&source=osv-app-springboot) account and create a new disk from the RAW image.
+Sign into your [CloudSigma](http://tracking.cloudsigma.com/aff_c?offer_id=2&aff_id=2295&url_id=19&source=osv-app-springboot) account and create a new disk using the previously created RAW image.
 
-Create a new machine with sufficient resources, 1GHz of CPU and 256 MB of RAM are more than enough.
+Create a new machine with sufficient resources. Typically 1GHz of CPU and 256MB of RAM are more than enough.
 
 Start the machine. 
 
-Now that the machine is running, visit the OSv dashboard: 
+Now that the machine is running, go to the OSv dashboard: 
 
 * http://public-ip:8000/dashboard/
 
-Replace localhost with the public IP to get access to the service and the health status.
+Replace ``localhost`` with the public IP to get access to the service and the service health status.
 
 ## Reporting Issues
 
-All issues can be reported at [https://github.com/odaceo/osv-app-springboot/issues](https://github.com/odaceo/osv-app-springboot/issues)
+Issues can be reported at [https://github.com/odaceo/osv-app-springboot/issues](https://github.com/odaceo/osv-app-springboot/issues)
 
-## Code
+## Source code
 
-All code can be found at [https://github.com/odaceo/osv-app-springboot](https://github.com/odaceo/osv-app-springboot)
+The source code is available at [https://github.com/odaceo/osv-app-springboot](https://github.com/odaceo/osv-app-springboot)
 
 ## License
 
-All code distributed under [ASL 2.0](LICENSE).
+All the source code is distributed under [ASL 2.0](LICENSE).
 
 ## Copyright
 
