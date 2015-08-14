@@ -34,13 +34,13 @@ To launch the application under VirtualBox use the following command:
 $ capstan run -p 'vbox' -f '8080:8080' -f '9090:9090' -v
 ```
 
-To the service use the following command: 
+To run the service use the following command: 
 
 ```
 $ curl http://localhost:8080/greeting
 ```
 
-To check the health of the application, use the following command:
+To check the application's health use the following command:
 
 ```
 $ curl http://localhost:9090/health
