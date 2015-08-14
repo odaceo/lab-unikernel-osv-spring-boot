@@ -67,7 +67,7 @@ Create a new machine with sufficient resources. Typically 1GHz of CPU and 256MB 
 
 Start the machine. 
 
-Now that the machine is running, go to the OSv dashboard: 
+Now that the virtual machine is running, go to the OSv dashboard: 
 
 * http://public-ip:8000/dashboard/
 
