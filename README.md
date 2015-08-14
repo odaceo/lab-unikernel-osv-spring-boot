@@ -71,7 +71,7 @@ Now that the machine is running, go to the OSv dashboard:
 
 * http://public-ip:8000/dashboard/
 
-Replace ``localhost`` with the public IP to get access to the service and the service health status.
+Replace ``localhost`` with the public IP to get access to the service and the service health status page.
 
 ## Reporting Issues
 
