@@ -21,11 +21,11 @@ $ export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64`
 
 The build command creates a virtual machine running on Virtual Box.
 
-> If you modify the application, you will need rebuild the image with the following command:
+If you modify the application, you will need rebuild the image with the following command:
 
->```
->$ capstan build -p 'vbox' -v
->```
+```
+$ capstan build -p 'vbox' -v
+```
 
 ## Running the application
 
@@ -69,7 +69,9 @@ Start the machine.
 
 Now that the virtual machine is running, go to the OSv dashboard: 
 
-* http://public-ip:8000/dashboard/
+```
+http://public-ip:8000/dashboard/
+```
 
 Replace ``localhost`` with the public IP to get access to the service and the service health status page.
 
