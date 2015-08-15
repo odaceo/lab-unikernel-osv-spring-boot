@@ -19,7 +19,7 @@ $ export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64`
 
 ## Building the application
 
-The ``build`` command creates a Capstan virtual machine image.
+The build command creates a virtual machine running on Virtual Box.
 
 > If you modify the application, you will need rebuild the image with the following command:
 
