@@ -6,7 +6,7 @@ base: cloudius/osv-openjdk
 #
 # The command line passed to OSv to start up the application.
 #
-cmdline: /java.so -jar /hello-1.0.0.jar
+cmdline: /java.so -jar /lab-osv-spring-boot-1.0.0.jar
 
 #
 # The command to use to build the application.
@@ -17,4 +17,4 @@ build: mvn package
 # List of files that are included in the generated image.
 #
 files:
-  /hello-1.0.0.jar: target/osv-app-spring-boot-1.0.0.jar
+  /lab-osv-spring-boot-1.0.0.jar: target/hello-world-1.0.0.jar
