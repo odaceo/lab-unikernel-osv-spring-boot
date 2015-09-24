@@ -1,6 +1,5 @@
 # Lab | OSv + Spring Boot
 
-[![Build Status](https://travis-ci.org/odaceo/lab-osv-spring-boot.svg)](https://travis-ci.org/odaceo/lab-osv-spring-boot)
 [![License](https://img.shields.io/github/license/odaceo/lab-osv-spring-boot.svg)](LICENSE)
 
 ## Description
