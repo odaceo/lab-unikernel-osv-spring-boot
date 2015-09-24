@@ -1,6 +1,5 @@
 # Lab | OSv + Spring Boot
 
-[![Build Status](https://travis-ci.org/odaceo/lab-osv-spring-boot.svg)](https://travis-ci.org/odaceo/lab-osv-spring-boot)
 [![License](https://img.shields.io/github/license/odaceo/lab-osv-spring-boot.svg)](LICENSE)
 
 ## Description
@@ -21,7 +20,8 @@ export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64`
 
 The build command creates a virtual machine running on Virtual Box.
 
-If you modify the application, you will need rebuild the image with the following command:
+If you modify [Capstanfile](Capstanfile), you will need rebuild 
+the image with the following command:
 
 ``` shell
 capstan build -p 'vbox' -v
