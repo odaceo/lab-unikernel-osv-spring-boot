@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ch.odaceo.oss</groupId>
-    <artifactId>osv-app-spring-boot</artifactId>
+    <groupId>ch.odaceo.lab.springboot</groupId>
+    <artifactId>hello-world</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>OSv Spring Boot App</name>
-    <description>A Spring Boot application running on OSv.</description>
+    <name>Lab | Spring Boot | Hello World</name>
+    <description>Simple web application with Spring Boot.</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

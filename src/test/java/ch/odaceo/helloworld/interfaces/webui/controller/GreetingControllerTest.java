@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ch.odaceo.hello.interfaces.webui.controller;
+package ch.odaceo.helloworld.interfaces.webui.controller;
 
-import ch.odaceo.hello.Application;
+import ch.odaceo.helloworld.Application;
 import static org.hamcrest.CoreMatchers.containsString;
 import org.junit.Test;
 import static org.junit.Assert.*;

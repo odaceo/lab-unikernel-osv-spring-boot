@@ -1,7 +1,7 @@
-# osv-app-springboot
+# Lab | OSv + Spring Boot
 
-[![License](https://img.shields.io/github/license/odaceo/osv-app-springboot.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/odaceo/osv-app-springboot.svg)](https://travis-ci.org/odaceo/osv-app-springboot)
+[![Build Status](https://travis-ci.org/odaceo/lab-osv-spring-boot.svg)](https://travis-ci.org/odaceo/lab-osv-spring-boot)
+[![License](https://img.shields.io/github/license/odaceo/lab-osv-spring-boot.svg)](LICENSE)
 
 ## Description
 
@@ -12,9 +12,9 @@ A Spring Boot application configured to run on OSv.
 You need to have [Capstan](https://github.com/cloudius-systems/capstan)
 installed on your computer.
 
-```
-$ export PATH=$HOME/bin:$PATH 
-$ export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64` 
+``` shell
+export PATH=$HOME/bin:$PATH 
+export CAPSTAN_QEMU_PATH=`which qemu-system-x86_64` 
 ```
 
 ## Building the application
@@ -23,45 +23,45 @@ The build command creates a virtual machine running on Virtual Box.
 
 If you modify the application, you will need rebuild the image with the following command:
 
-```
-$ capstan build -p 'vbox' -v
+``` shell
+capstan build -p 'vbox' -v
 ```
 
 ## Running the application
 
 To launch the application under VirtualBox use the following command:
 
-```
-$ capstan run -p 'vbox' -f '8080:8080' -f '9090:9090' -v
+``` shell
+capstan run -p 'vbox' -f '8080:8080' -f '9090:9090' -v
 ```
 
 To run the service use the following command: 
 
-```
-$ curl http://localhost:8080/greeting
+``` shell
+curl http://localhost:8080/greeting
 ```
 
 To check the application's health use the following command:
 
-```
-$ curl http://localhost:9090/health
+``` shell
+curl http://localhost:9090/health
 ```
 
 ## Deploying the application on CloudSgima
 
 First, build the disk image for KVM using the following command:
 
-```
-$ capstan build -p 'qemu' -v
+``` shell
+capstan build -p 'qemu' -v
 ```
 
 To convert the disk image into a RAW format use the following command: 
 
-```
-$ qemu-img convert -f qcow2 -O raw ~/.capstan/repository/osv-app-springboot/osv-app-springboot.qemu osv-app-springboot.raw
+``` shell
+qemu-img convert -f qcow2 -O raw ~/.capstan/repository/lab-osv-spring-boot/lab-osv-spring-boot.qemu lab-osv-spring-boot.raw
 ```
 
-Sign into your [CloudSigma](http://tracking.cloudsigma.com/aff_c?offer_id=2&aff_id=2295&url_id=19&source=osv-app-springboot) account and create a new disk using the previously created RAW image.
+Sign into your [CloudSigma](http://tracking.cloudsigma.com/aff_c?offer_id=2&aff_id=2295&url_id=19&source=lab-osv-spring-boot) account and create a new disk using the previously created RAW image.
 
 Create a new machine with sufficient resources. Typically 1GHz of CPU and 256MB of RAM are more than enough.
 
@@ -73,15 +73,15 @@ Now that the virtual machine is running, go to the OSv dashboard:
 http://public-ip:8000/dashboard/
 ```
 
-Replace ``localhost`` with the public IP to get access to the service and the service health status page.
+Replace ``public-ip`` with the public IP to get access to the service and the service health status page.
 
 ## Reporting Issues
 
-Issues can be reported at [https://github.com/odaceo/osv-app-springboot/issues](https://github.com/odaceo/osv-app-springboot/issues)
+Issues can be reported at [https://github.com/odaceo/lab-osv-spring-boot/issues](https://github.com/odaceo/lab-osv-spring-boot/issues)
 
 ## Source code
 
-The source code is available at [https://github.com/odaceo/osv-app-springboot](https://github.com/odaceo/osv-app-springboot)
+The source code is available at [https://github.com/odaceo/lab-osv-spring-boot](https://github.com/odaceo/lab-osv-spring-boot)
 
 ## License
 

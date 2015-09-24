@@ -6,4 +6,4 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
-osv-app-springboot.raw
+lab-osv-spring-boot.raw
