@@ -13,24 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ch.odaceo.hello;
+package ch.odaceo.helloworld;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Alexandre Garino <alexandre.garino@odaceo.ch>
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = Application.class)
-@WebAppConfiguration
-public class ApplicationTests {
+@SpringBootApplication
+public class Application {
 
-    @Test
-    public void contextLoads() {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
     }
-
 }
