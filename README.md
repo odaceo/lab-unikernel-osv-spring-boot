@@ -61,7 +61,7 @@ To convert the disk image into a RAW format use the following command:
 qemu-img convert -f qcow2 -O raw ~/.capstan/repository/lab-osv-spring-boot/lab-osv-spring-boot.qemu lab-osv-spring-boot.raw
 ```
 
-Sign into your [CloudSigma](http://tracking.cloudsigma.com/aff_c?offer_id=2&aff_id=2295&url_id=19&source=lab-osv-spring-boot) account and create a new disk using the previously created RAW image.
+Sign into your [CloudSigma](http://cloudsigma.com) account and create a new disk using the previously created RAW image.
 
 Create a new machine with sufficient resources. Typically 1GHz of CPU and 256MB of RAM are more than enough.
 
