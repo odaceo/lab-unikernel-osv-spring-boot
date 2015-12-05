@@ -1,2 +1,2 @@
-*.jar
-lab-osv-spring-boot.raw
+*.jar*
+*.raw
