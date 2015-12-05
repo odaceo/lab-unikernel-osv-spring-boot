@@ -1,6 +1,6 @@
 # Lab | OSv + Spring Boot
 
-[![License](https://img.shields.io/github/license/odaceo/lab-osv-spring-boot.svg)](LICENSE)
+[![License](https://img.shields.io/github/license/odaceo/lab-unikernel-osv-spring-boot.svg)](LICENSE)
 
 ## Description
 
@@ -58,7 +58,7 @@ capstan build -p 'qemu' -v
 To convert the disk image into a RAW format use the following command: 
 
 ``` shell
-qemu-img convert -f qcow2 -O raw ~/.capstan/repository/lab-osv-spring-boot/lab-osv-spring-boot.qemu lab-osv-spring-boot.raw
+qemu-img convert -f qcow2 -O raw ~/.capstan/repository/lab-unikernel-osv-spring-boot/lab-unikernel-osv-spring-boot.qemu lab-unikernel-osv-spring-boot.raw
 ```
 
 Sign into your [CloudSigma](http://cloudsigma.com) account and create a new disk using the previously created RAW image.
@@ -77,11 +77,11 @@ Replace ``public-ip`` with the public IP to get access to the service and the se
 
 ## Reporting Issues
 
-Issues can be reported at [https://github.com/odaceo/lab-osv-spring-boot/issues](https://github.com/odaceo/lab-osv-spring-boot/issues)
+Issues can be reported at [https://github.com/odaceo/lab-unikernel-osv-spring-boot/issues](https://github.com/odaceo/lab-unikernel-osv-spring-boot/issues)
 
 ## Source code
 
-The source code is available at [https://github.com/odaceo/lab-osv-spring-boot](https://github.com/odaceo/lab-osv-spring-boot)
+The source code is available at [https://github.com/odaceo/lab-unikernel-osv-spring-boot](https://github.com/odaceo/lab-unikernel-osv-spring-boot)
 
 ## License
 
