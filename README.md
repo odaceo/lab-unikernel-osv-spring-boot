@@ -1,4 +1,4 @@
-# Lab | OSv + Spring Boot
+# Lab :: Unikernel :: OSv + Spring Boot
 
 [![License](https://img.shields.io/github/license/odaceo/lab-unikernel-osv-spring-boot.svg)](LICENSE)
 
@@ -38,7 +38,7 @@ capstan run -p 'vbox' -f '8080:8080' -f '9090:9090' -v
 To run the service use the following command: 
 
 ``` shell
-curl http://localhost:8080/greeting
+curl http://localhost:8080/greeting?name=Odaceo
 ```
 
 To check the application's health use the following command:
