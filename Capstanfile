@@ -11,10 +11,10 @@ cmdline: /java.so -jar /app.jar
 #
 # The command to use to download the application.
 #
-build: wget https://dl.bintray.com/odaceo/maven/ch/odaceo/lab/springboot/hello-world/0.5.1/hello-world-0.5.1.jar
+build: wget https://dl.bintray.com/odaceo/generic/lab-hello-world-spring-boot/master/hello-spring-boot.jar
 
 #
 # List of files that are included in the generated image.
 #
 files:
-  /app.jar: hello-world-0.5.1.jar
+  /app.jar: hello-spring-boot.jar
